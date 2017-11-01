@@ -15,7 +15,7 @@ A sample invocation might look like this:
 PYTHONIOENCODING=utf-8 PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ python learn.py
 ```
 
-The fit will be pickled and saved as `fit`, making it available for usage on
+The model will be pickled and saved as `fit`, making it available for usage on
 the next invocation.
 
 Also ensure availability of `megam` in PATH if using maxent; naive Bayes is on
