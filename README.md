@@ -8,8 +8,8 @@ have been moved into directory `news`.
 converting, with the following: `iconv -f ISO-8859-1 -t UTF-8 199.txt`.
 
 Run `learn.py` with `PYTHONIOENCODING=utf-8` and `NLTK_DATA` and `PYTHONPATH`
-so that the nltk libraries and featx from the NLTK3 Cookbook code can be used.
-A sample invocation might look like this:
+set up so that the nltk libraries and featx from the NLTK3 Cookbook code can be
+used.  A sample invocation might look like this:
 
 ```bash
 PYTHONIOENCODING=utf-8 PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ python learn.py
@@ -18,5 +18,5 @@ PYTHONIOENCODING=utf-8 PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ pytho
 The model will be pickled and saved as `fit`, making it available for usage on
 the next invocation.
 
-Also ensure availability of `megam` in PATH if using maxent; naive Bayes is on
+Also ensure availability of `megam` in `PATH` if using maxent; naive Bayes is on
 by default.
