@@ -7,16 +7,18 @@ have been moved into directory `news`.
 `199.txt` in `sport` had character `<A3>` (the pound symbol) that needed
 converting, with the following: `iconv -f ISO-8859-1 -t UTF-8 199.txt`.
 
-Run `learn.py` with `PYTHONIOENCODING=utf-8` and `NLTK_DATA` and `PYTHONPATH`
-set up so that the nltk libraries and featx from the NLTK3 Cookbook code can be
-used.  A sample invocation might look like this:
+The library featx from the
+[repository](https://github.com/japerk/nltk3-cookbook/) for *NLTK3 Cookbook* is
+required for this code to function. Install that first and then run `learn.py`
+with and `NLTK_DATA` and `PYTHONPATH` set up so that the nltk libraries and
+featx can both be used.  A sample invocation might look like this:
 
 ```bash
-PYTHONIOENCODING=utf-8 PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ python learn.py
+PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ python3 learn.py
 ```
 
 The model will be pickled and saved as `fit`, making it available for usage on
-the next invocation.
+the next invocation; delete `fit` to create a new model.
 
 Also ensure availability of `megam` in `PATH` if using maxent; naive Bayes is on
 by default.
