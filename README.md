@@ -14,8 +14,11 @@ with and `NLTK_DATA` and `PYTHONPATH` set up so that the nltk libraries and
 featx can both be used.  A sample invocation might look like this:
 
 ```bash
-PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk/ python3 learn.py
+PYTHONPATH=~/src/nltk3-cookbook/ NLTK_DATA=~/.nltk_data python3 learn.py
 ```
+
+(Directions to use `NLTK_DATA` can be ignored if the data are in a default
+location like `$HOME/nltk_data` but ew.)
 
 The model will be pickled and saved as `fit`, making it available for usage on
 the next invocation; delete `fit` to create a new model.
